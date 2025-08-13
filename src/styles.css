@@ -2,5 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Smooth fonts */
+/* Fonte suave */
 html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Backgrounds temáticos */
+body {
+  @apply bg-neutral-50 text-neutral-900;
+}
+.dark body {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+/* Cartões “glass” reutilizáveis */
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/70 backdrop-blur dark:bg-white/5 dark:border-white/10 shadow-soft;
+}
+
+/* Botões primários */
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition;
+}
+.btn-primary {
+  @apply bg-brand-500 text-white hover:bg-brand-600 shadow-soft dark:shadow-glow;
+}
+.btn-ghost {
+  @apply border hover:bg-white/60 dark:hover:bg-white/10;
+}
