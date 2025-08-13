@@ -66,3 +66,7 @@ npm run dev
 # Build de produção
 npm run build
 npm run preview
+
+## 📜 Licença
+
+Este projeto está sob licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
